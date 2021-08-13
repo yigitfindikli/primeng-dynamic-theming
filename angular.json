@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-blocks": {
+    "primeng-dynamic-theming": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-blocks",
+            "outputPath": "dist/primeng-dynamic-theming",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -107,10 +107,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-blocks:build:production"
+              "browserTarget": "primeng-dynamic-theming:build:production"
             },
             "development": {
-              "browserTarget": "ng-blocks:build:development"
+              "browserTarget": "primeng-dynamic-theming:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -118,7 +118,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-blocks:build"
+            "browserTarget": "primeng-dynamic-theming:build"
           }
         },
         "test": {
@@ -142,5 +142,5 @@
       }
     }
   },
-  "defaultProject": "ng-blocks"
+  "defaultProject": "primeng-dynamic-theming"
 }
