@@ -1,0 +1,57 @@
+<div class="card">
+    <div class="flex align-items-center justify-content-center mb-4">
+        <a (click)="changeTheme('saga-blue')" class="mr-3 cursor-pointer">
+            <img src="assets/images/themes/saga-blue.png" width="50">
+        </a>
+        <a (click)="changeTheme('vela-blue')" class="mr-3 cursor-pointer">
+            <img src="assets/images/themes/vela-blue.png" width="50">
+        </a>
+        <a (click)="changeTheme('arya-blue')" class="mr-3 cursor-pointer">
+            <img src="assets/images/themes/arya-blue.png" width="50">
+        </a>
+        <a (click)="changeTheme('md-light-indigo')" class="mr-3 cursor-pointer">
+            <img src="assets/images/themes/md-light-indigo.svg" width="50">
+        </a>
+        <a (click)="changeTheme('md-dark-indigo')" class="mr-3 cursor-pointer">
+            <img src="assets/images/themes/md-dark-indigo.svg" width="50">
+        </a>
+        <a (click)="changeTheme('bootstrap4-light-purple')" class="mr-3 cursor-pointer">
+            <img src="assets/images/themes/bootstrap4-light-purple.svg" width="50">
+        </a>
+        <a (click)="changeTheme('bootstrap4-dark-purple')" class="mr-3 cursor-pointer">
+            <img src="assets/images/themes/bootstrap4-dark-purple.svg" width="50">
+        </a>
+    </div>
+    <div class="formgrid grid p-fluid">
+        <div class="field col-12 md:col-6">
+            <label for="firstname6">Firstname</label>
+            <input id="firstname6" type="text" pInputText />
+        </div>
+        <div class="field col-12 md:col-6">
+            <label for="lastname6">Lastname</label>
+            <input id="lastname6" type="text" pInputText />
+        </div>
+        <div class="field col-12">
+            <label for="address">Address</label>
+            <textarea id="address" type="text" rows="4" pInputTextarea></textarea>
+        </div>
+        <div class="field col-12 md:col-6">
+            <label for="city">City</label>
+            <input id="city" type="text" pInputText class="inputfield w-full">
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="state">State</label>
+            <p-dropdown
+                inputId="state"
+                [options]="states"
+                [(ngModel)]="selectedState"
+                placeholder="Select"
+                optionLabel="name"
+            ></p-dropdown>
+        </div>
+        <div class="field col-12 md:col-3">
+            <label for="zip">Zip</label>
+            <input id="zip" type="text" pInputText />
+        </div>
+    </div>
+</div>
